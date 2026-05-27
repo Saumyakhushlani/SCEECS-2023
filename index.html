@@ -99,242 +99,7 @@
     }
   }
 
-  /* Css for popUPs */
-  #toggle {
-    cursor: pointer;
-    left: 445px;
-  }
 
-  #toggle i {
-    z-index: 9999999;
-    position: absolute;
-    padding: 10px 8px;
-    width: 40px;
-    color: #000;
-    font-size: 30px;
-    right: 25px;
-  }
-
-  #popUp {
-    position: fixed;
-    top: 50%;
-    color: white;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* background: #000; */
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: row;
-    width: 30%;
-    height: fit-content;
-    /* font-family: 'Autour One', cursive; */
-    display: none;
-    z-index: 1000;
-  }
-
-  #boxL {
-    padding: 4rem 2rem;
-    background: #3AAAFF;
-    color: white;
-    padding: 30px;
-    width: 95%;
-    height: 90%;
-    border-radius: 10px;
-  }
-
-  #disc {
-    font-size: 1.2rem;
-    color: white;
-    padding: 20px;
-    margin-top: 20px 0 20px 0;
-    text-align: center;
-  }
-
-  #deadlineDisc {
-    font-size: 1.3rem;
-    text-align: center;
-  }
-
-  #deadlineDisc span {
-    font-weight: 600;
-  }
-
-  .imagebox {
-    display: flex;
-    align-items: center;
-    margin: 0.8rem 0;
-    padding-bottom: 0;
-    justify-content: center;
-  }
-
-  #mainWord {
-    color: rgb(247, 25, 25);
-    font-weight: 600;
-  }
-
-  #title {
-    text-align: center;
-    color: rgb(82, 4, 134);
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-  }
-
-  #mainHeading {
-    text-align: center;
-    color: rgb(82, 4, 134);
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-
-  button {
-    border-radius: 5px;
-    background: white;
-    width: 10rem;
-    padding: 10px 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin: auto;
-    display: block;
-  }
-
-  .imagebox img {
-    width: 130px;
-  }
-
-  .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 999;
-    /* Ensure the overlay is above other content */
-    transition: opacity .3s;
-  }
-
-  #btn {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    padding-top: 8px;
-    justify-content: center;
-  }
-
-  /* @media only screen and (max-width: 1300px){
-      .banner-section{
-        background-position: right 50% top 210% !important;
-      }
-   } */
-  @media only screen and (max-width: 1200px) {
-    #disc {
-      font-size: 1rem;
-    }
-
-    #popUp {
-      flex-wrap: wrap;
-      width: 60%;
-      height: fit-content;
-      overflow: hidden;
-    }
-
-    #boxL {
-      width: 95%;
-      height: 90%;
-    }
-
-    .imagebox img {
-      width: 130px;
-      padding-bottom: 1.2rem;
-
-    }
-
-    button {
-      width: 10rem;
-    }
-  }
-
-  @media only screen and (max-width: 610px) {
-    .imagebox img {
-      width: 130px;
-      padding-bottom: 1.2rem;
-
-    }
-
-    .imagebox {
-      padding: 0;
-    }
-
-    #popUp {
-      /* flex-wrap: wrap; */
-      width: 90%;
-      height: fit-content;
-      overflow: hidden;
-      border-radius: 7.9px;
-      /* font-family: 'Anton', sans-serif; */
-    }
-
-    .imagebox {
-      font-size: 1.2rem;
-      padding: 10px;
-    }
-
-    #boxL {
-      width: 95%;
-      height: 90%;
-      border-radius: 8px;
-    }
-
-    button {
-      font-size: 1em;
-      width: 9rem;
-    }
-
-    #disc {
-      font-size: 1rem;
-    }
-
-  }
-
-  @media only screen and (max-width: 430px) {
-    #boxL {
-      height: 75%;
-      width: 98%;
-    }
-
-    button {
-      width: 100%;
-    }
-  }
-
-  @media only screen and (max-width: 370px) {
-    #boxL {
-      height: 75%;
-      width: 98%;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px 10px;
-    }
-  }
-
-  @media only screen and (max-width: 310px) {
-    #boxL {
-      height: 75%;
-      width: 98%;
-    }
-
-    button {
-      width: 100%;
-      padding: 7px 7px;
-    }
-
-  }
 
   html {
     scroll-behavior: smooth;
@@ -342,9 +107,7 @@
 </style>
 
 <body>
-  <div id="sceecs-redirect-overlay"
-    style="position:fixed;top:0;right:0;bottom:0;left:0;background:#000;z-index:2147483647;margin:0;padding:0;"
-    aria-hidden="true"></div>
+
   <div class="page-wrapper">
     <!-- Main Header-->
     <header class="main-header header-style-one">
@@ -2573,72 +2336,23 @@
     </footer>
     <!-- End Main Footer -->
   </div>
-  <!--End pagewrapper-->
-
-  <!-- Overlay Page -->
+  <!--En  <!-- Legacy Popups disabled -->
+  <!--
   <div class="overlay" id="overlay"></div>
-  <!-- Overlay End -->
-
-  <!-- Pop UPs -->
-  <!-- <div id="popUp">
-            <span id="toggle">
-                <i class="ri-close-line"></i>
-            </span>
-            <div id="boxL">
-                <p id="title">SCEECS 2026</p> -->
-  <!-- <p class="imagebox">
-                  <img src="./codeHelp.png" alt="">
-                  <img src="./cybrom.png" alt="">
-                </p>
-                <p id="mainHeading">Join us for an exclusive workshop featuring expert sessions by <span style="color: orangered;">Lakshay Kumar</span>  and <span style="color: orangered;"> Love Babbar</span>, curated by Cybrom.</p>
-                <p id="deadlineDisc">⏰ Time's ticking! Register now. 🚀 Limited seats.</p> -->
-  <!-- <p id="disc">SCEECS 2025 is Here!</p> -->
-  <!-- <div id="btn">
-                    <a href="https://linktr.ee/IEEE_MANIT" target="_blank"><button style="cursor: pointer;">Register Now</button></a>
-                </div> -->
-  <!-- </div>
-        </div> -->
-
-  <!--<div id="popUp">
-            <span id="toggle">
-                <i class="ri-close-line"></i>
-            </span>
-            <div id="boxL">
-                
-                <p class="imagebox">
-                  <img src="logoWhite2026.png" alt="SCEECS-2026">
-                  
-                </p>
-                <p id="mainHeading" style="font-size:25px;color:#ff006a">Deadline Extended</p>
-                <p id="mainHeading" style="color:#ff006a">Till 16th October 2025!</p>
-
-                <p id="deadlineDisc">Submit your papers on Microsoft CMT</p> 
-                <p id="disc">SCEECS 2026 is Here!</p> 
-                <div id="btn">
-                    <a href="https://cmt3.research.microsoft.com/SCEECS2026/" target="_blank"><button style="cursor: pointer;">Submit here</button></a>
-                </div>
-            </div>
-        </div>-->
-
-
-        
   <div id="popUp">
     <span id="toggle">
       <i class="ri-close-line"></i>
     </span>
     <div id="boxL">
-
       <p class="imagebox">
         <img src="logoWhite2026.png" alt="SCEECS-2026">
-
       </p>
       <p id="mainHeading" style="font-size:25px;color:#ff006a">Submission Closed</p>
       <p id="mainHeading" style="color:#ff006a">Thank you for your interest!</p>
-
       <p id="deadlineDisc">Paper submissions are no longer being accepted</p>
-      <!-- <p id="disc">SCEECS 2026 is Here!</p> -->
     </div>
   </div>
+  -->
   <!-- Pop UPs  End-->
 
   
